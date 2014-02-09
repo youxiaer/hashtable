@@ -114,9 +114,8 @@ int main() {
     printf("dictSize: %d\n", dSize);
 	printDictStatus(d);
 	
-	printf("\n\n*****************dictFlush********************\n");
-	int dFlush = dictFlush(d);
-    printf("dictFlush: %d\n", dFlush);
+	printf("\n\n*****************dictFree*********************\n");
+	dictFree(d);
 	printDictStatus(d);
 
     free(key);
